@@ -1,0 +1,14 @@
+# Project dependencies
+.cache
+node_modules
+.vscode
+
+# Build directory
+/public
+.DS_Store
+
+# error logs
+yarn-error.log
+
+# env files
+.env.*
