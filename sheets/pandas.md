@@ -38,5 +38,5 @@ df.drop()
 
 ## Get index of a specific column
 ```
-df.columns.get_loc("Total Score")
+df.columns.get_loc("column_name")
 ```
