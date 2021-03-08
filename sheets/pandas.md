@@ -5,13 +5,12 @@ updatedDate: 2021-03-07
 published: true
 ---
 
-## View first few elements in df
+## View elements in df
 ```
+# first few elements
 df.head()
-```
 
-## View last few elements in df
-```
+# last few elements
 df.tail()
 ```
 
@@ -20,23 +19,34 @@ df.tail()
 df.columns
 ```
 
-## Count number of values in df
+## Map old column values to new column values
 ```
-df.count # = number of rows x columns
-df.count() # = number of instances of each variable
-```
-
-## Add columns to df
-```
-df.assign()
+# replace country names with capital names
+mapping = {"France": "Paris", "Italy": "Rome", "Spain": "Madrid"}
+df["Name"] = df["Name"].replace(mapping)
 ```
 
-## Delete column from df
+## Assign generic value to entire column
 ```
-df.drop()
+# make all entries in the column "Country" equal "South Africa"
+df["Country"] = "South Africa"
 ```
 
-## Get index of a specific column
+## Reset df index
 ```
-df.columns.get_loc("column_name")
+df = df.reset_index(drop=True)
+```
+
+## Rename column name
+```
+df = df.rename(columns={"OLD_NAME","NEW_NAME"})
+```
+
+## Drop null values
+```
+# drop null rows
+df = df.dropna("index")
+
+# drop null columns
+df = df.dropna("columns")
 ```
