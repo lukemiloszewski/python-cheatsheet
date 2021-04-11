@@ -76,8 +76,8 @@ export const Code = ({ children, className }) => {
             className={className}
             style={{
               ...style,
-              overflow: 'scroll',
-              overflowY: 'hidden',
+              overflow: 'auto',
+              wordWrap: 'normal',
               marginTop: 0,
               marginBottom: 0,
               padding: 16,
