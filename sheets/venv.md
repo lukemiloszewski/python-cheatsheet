@@ -27,7 +27,7 @@ py -m pip install "package_name"
 # install specific version
 py -m pip install "package_name"==1.0.4
 
-#  uninstall package
+# uninstall package
 py -m pip uninstall "package_name"
 
 # upgrade package
@@ -47,7 +47,7 @@ py -m pip show "package_name"
 ```
 py -m pip freeze > requirements.txt
 
-#  install packages within virtual environment
+# install packages within virtual environment
 py -m pip install -r requirements.txt
 ```
 
