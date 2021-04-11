@@ -45,7 +45,7 @@ export default ({ data }) => {
           left="calc(50% + 400px)"
           top="80px"
           maxH="50vh"
-          w="310px"
+          w="310"
           display="flex"
           flexDirection="column"
           boxShadow="lg"
@@ -55,8 +55,7 @@ export default ({ data }) => {
             Table of contents
           </Box>
           <UnorderedList
-            overflow="hidden"
-            overflowY="auto"
+            overflow="auto"
             mb="3"
             mr="4"
           >
