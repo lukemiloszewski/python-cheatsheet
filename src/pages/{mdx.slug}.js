@@ -75,7 +75,7 @@ export default ({ data }) => {
           </UnorderedList>
         </Box>
       )}
-      <Box as="h1" fontSize="4xl">
+      <Box as="h1" fontSize="3xl">
         {title}
       </Box>
       <Small>
