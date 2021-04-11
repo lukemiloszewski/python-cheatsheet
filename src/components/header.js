@@ -16,7 +16,7 @@ export const Header = ({ title }) => {
           textDecor: 'none',
         }}
       >
-        <Box as="h1" fontSize="4xl" fontFamily="heading">
+        <Box as="h1" fontSize="3xl" fontFamily="heading">
           {title}
         </Box>
       </Link>
